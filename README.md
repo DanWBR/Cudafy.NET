@@ -34,3 +34,13 @@ will throw a "Missing Member" exception. Only the Standard Launch will work:
 ```csharp
 gpu.Launch(1,1, “thekernel”);
 ```
+
+## Screenshots
+
+Cudafy working on DWSIM on macOS and Linux:
+
+![macOS](https://i.snag.gy/BfZETh.jpg "macOS")
+
+![Linux](https://i.snag.gy/v5kUHp.jpg "Linux")
+
+
