@@ -37,7 +37,7 @@ gpu.Launch(1,1, “thekernel”);
 
 ## Screenshots
 
-Cudafy working on DWSIM on macOS and Linux:
+Cudafy working on [DWSIM](https://github.com/DanWBR/dwsim5 "DWSIM") on macOS and Linux:
 
 ![macOS](https://i.snag.gy/BfZETh.jpg "macOS")
 
