@@ -126,7 +126,7 @@ namespace Cloo
             
             Events = new List<ComputeEventBase>();
 
-            Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+            //Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
         }
 
         #endregion
@@ -710,7 +710,7 @@ namespace Cloo
             // free native resources
             if (Handle.IsValid)
             {
-                Console.WriteLine("Dispose " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+                //Console.WriteLine("Dispose " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
                 CL10.ReleaseCommandQueue(Handle);
                 Handle.Invalidate();
             }

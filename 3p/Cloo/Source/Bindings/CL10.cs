@@ -48,7 +48,7 @@ namespace Cloo.Bindings
 #if LINUX
         protected const string libName = "libOpenCL";
 #else
-        protected const string libName = "OpenCL.dll";
+        protected const string libName = "OpenCL";
 #endif
 
         /// <summary>

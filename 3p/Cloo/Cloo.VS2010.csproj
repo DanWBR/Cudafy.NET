@@ -130,12 +130,6 @@
     <Compile Include="Source\Bindings\Enums.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Cloo.dll.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>

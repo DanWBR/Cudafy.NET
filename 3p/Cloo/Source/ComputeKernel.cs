@@ -101,7 +101,7 @@ namespace Cloo
             functionName = GetStringInfo<CLKernelHandle, ComputeKernelInfo>(Handle, ComputeKernelInfo.FunctionName, CL10.GetKernelInfo);
             this.program = program;
 
-            Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+            //Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
         }
 
         internal ComputeKernel(string functionName, ComputeProgram program)
@@ -116,7 +116,7 @@ namespace Cloo
             this.functionName = functionName;
             this.program = program;
 
-            Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+            //Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
         }
 
         #endregion
@@ -300,7 +300,7 @@ namespace Cloo
         {
             if (Handle.IsValid)
             {
-                Console.WriteLine("Dispose " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+                //Console.WriteLine("Dispose " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
                 CL10.ReleaseKernel(Handle);
                 Handle.Invalidate();
             }

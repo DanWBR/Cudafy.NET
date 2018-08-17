@@ -118,7 +118,7 @@ namespace Cloo
             this.filtering = filtering;
             this.normalizedCoords = normalizedCoords;
 
-            Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+            //Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
         }
 
         #endregion
@@ -134,7 +134,7 @@ namespace Cloo
         {
             if (Handle.IsValid)
             {
-                Console.WriteLine("Dispose " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+                //Console.WriteLine("Dispose " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
                 CL10.ReleaseSampler(Handle);
                 Handle.Invalidate();
             }

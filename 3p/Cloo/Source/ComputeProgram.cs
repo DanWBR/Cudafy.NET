@@ -141,7 +141,7 @@ namespace Cloo
             this.devices = context.Devices;
             this.source = new ReadOnlyCollection<string>(new string[] { source });
 
-            Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+            //Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
         }
 
         /// <summary>
@@ -165,7 +165,7 @@ namespace Cloo
             this.devices = context.Devices;
             this.source = new ReadOnlyCollection<string>(source);
 
-            Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+            //Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
         }
 
         /// <summary>
@@ -219,7 +219,7 @@ namespace Cloo
             this.devices = new ReadOnlyCollection<ComputeDevice>(
                 (devices != null) ? devices : context.Devices);
 
-            Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+            //Console.WriteLine("Create " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
         }
 
         #endregion
@@ -310,7 +310,7 @@ namespace Cloo
         {
             if (Handle.IsValid)
             {
-                Console.WriteLine("Dispose " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
+                //Console.WriteLine("Dispose " + this + " in Thread(" + Thread.CurrentThread.ManagedThreadId + ").", "Information");
                 CL10.ReleaseProgram(Handle);
                 Handle.Invalidate();
             }

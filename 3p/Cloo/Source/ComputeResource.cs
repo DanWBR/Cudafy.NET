@@ -73,7 +73,7 @@ namespace Cloo
         /// </summary>
         ~ComputeResource()
         {
-            Console.WriteLine(ToString() + " leaked!", "Warning");
+            //Console.WriteLine(ToString() + " leaked!", "Warning");
            // Dispose(false);
         }
 
