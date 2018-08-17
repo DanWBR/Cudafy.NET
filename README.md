@@ -1,10 +1,10 @@
 # Cudafy.NET
 
-This is an update of the original Cudafy.NET library to support Mono on macOS and Linux. It was updated to create a single DLL by using ilmerge on the Cudafy.NET project. 
+This is an update of the original Cudafy.NET library hosted on CondePlex to support Mono on macOS and Linux.
 
 ## Compiling
 
-Compile with VS 2017, target Release/AnyCPU.
+The solution was updated to create a single DLL by using ilmerge on the Cudafy.NET project. Compile with VS 2017, target Release/AnyCPU.
 
 ## General Tips
 
