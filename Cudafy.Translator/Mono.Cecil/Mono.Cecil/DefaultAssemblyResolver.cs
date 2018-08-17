@@ -28,6 +28,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace Mono.Cecil {
 
@@ -54,11 +55,20 @@ namespace Mono.Cecil {
 			if (cache.TryGetValue (name.FullName, out assembly))
 				return assembly;
 
-			assembly = base.Resolve (name);
-			cache [name.FullName] = assembly;
+            if (name.Name.Contains("Cudafy"))
+            {
+                assembly = ModuleDefinition.ReadModule(this.GetType().Assembly.Location).Assembly ;
+            }
+            else
+            {
+                assembly = base.Resolve(name);
+            }
 
-			return assembly;
-		}
+            cache [name.FullName] = assembly;
+
+            return assembly;
+
+        }
 
 		protected void RegisterAssembly (AssemblyDefinition assembly)
 		{
