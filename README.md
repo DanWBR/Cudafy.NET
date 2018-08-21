@@ -1,6 +1,6 @@
 # Cudafy.NET
 
-This is an update of the original Cudafy.NET library hosted on CondePlex to support Mono on macOS and Linux.
+This is an update of the original Cudafy.NET library hosted on CodePlex to support Mono on macOS and Linux.
 
 ## Compiling
 
